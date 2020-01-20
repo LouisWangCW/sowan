@@ -1,0 +1,25 @@
+<launch>
+  <arg name="map" />
+
+ 
+  <node name="sowan" pkg="sowan"  type="sowan_node" output="screen"> </node>  
+
+  <include file="$(find sowan)/launch/setting/laser.launch"/>
+  <include file="$(find sowan)/launch/setting/laser_odometry.launch"/>
+  <include file="$(find sowan)/launch/setting/amcl2.launch"/>
+  <include file="$(find sowan)/launch/setting/map_server.launch">
+    <arg name="map_name" value="$(arg map)" />
+  </include>
+
+  <node pkg="tf" type="static_transform_publisher" name="base_footprint_2_base_link" args="0 0 0 0 0 0  /base_link /base_footprint 100"/> 
+  <node pkg="tf" type="static_transform_publisher" name="base_link_2_laser" args="0 0 0 0 0 0 /base_link  /laser 100"/>
+
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+    <rosparam file="$(find sowan)/launch/params/costmap_common_params.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find sowan)/launch/params/costmap_common_params.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find sowan)/launch/params/local_costmap_params.yaml" command="load" />
+    <rosparam file="$(find sowan)/launch/params/global_costmap_params.yaml" command="load" />
+    <rosparam file="$(find sowan)/launch/params/base_local_planner_params.yaml" command="load" />
+  </node>
+
+</launch>

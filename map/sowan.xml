@@ -1,0 +1,85 @@
+<SOWAN>
+  <Patrol_Point>
+    <SET_1>(1024, 1024)</SET_1>
+    <SET_2>(1093, 1024)</SET_2>
+    <SET_3>(1093, 983)</SET_3>
+    <SET_4>(1004, 983)</SET_4>
+    <SET_5>(1004, 1024)</SET_5>
+  </Patrol_Point>
+
+  <Room_Set>
+    <ROOM_SET_1>
+      <SET_1>(1047, 1024)</SET_1>
+      <SET_2>(1047, 1043)</SET_2>
+      <SET_3>(1051, 1050)</SET_3>
+      <SET_4>(1045, 1050)</SET_4>
+    </ROOM_SET_1>
+
+    <ROOM_SET_2>
+      <SET_1>(1093, 1024)</SET_1>
+      <SET_2>(1093, 1043)</SET_2>
+      <SET_3>(1096, 1053)</SET_3>
+      <SET_4>(1090, 1053)</SET_4>
+    </ROOM_SET_2>
+
+   <ROOM_SET_3>
+      <SET_1>(1015, 1087)</SET_1>
+      <SET_2>(1015, 1106)</SET_2>
+      <SET_3>(1027, 1107)</SET_3>
+      <SET_4>(1027, 1140)</SET_4>
+    </ROOM_SET_3>
+  </Room_Set>
+
+  <Charge_Point>
+      <SET_1>(1010, 1050)</SET_1>
+      <SET_2>(990, 1050)</SET_2>
+  </Charge_Point>
+  <ChargeWaitTime>20</ChargeWaitTime>
+  <ChargePlatform>0</ChargePlatform>
+
+  <FrontSafeDistance>0.4</FrontSafeDistance>
+  <BackSafeDistance>0.4</BackSafeDistance>
+  <SideSafeDistance>0.25</SideSafeDistance>
+  <normalMoveType>0</normalMoveType>
+  <normalMovDegOffset>3</normalMovDegOffset>
+  <ArrivalRange>0.2</ArrivalRange>
+  <MaxCircleSpd>0.33</MaxCircleSpd>
+  <MaxLineSpd>0.2</MaxLineSpd>
+  <MaxTurnSpd>0.2</MaxTurnSpd>
+  <MinCircleNeedDeg>4</MinCircleNeedDeg>
+  <MinTurnNeedDeg>105</MinTurnNeedDeg>
+
+  <PatrolOverDeg>135</PatrolOverDeg>
+  <PatrolOverDeg_FinDeg>4</PatrolOverDeg_FinDeg>
+
+  <DoorOpenDistance>0.8</DoorOpenDistance>
+  <DoorOpenWidth>0.35</DoorOpenWidth>
+
+  <acc>1500</acc>
+  <spd>300</spd>
+  <turnRate>0.2</turnRate>
+  
+  <HitObjectRunawayType>1</HitObjectRunawayType>
+  <TestRoomID>1</TestRoomID>
+  <Debug_SW>0</Debug_SW>
+  <Debug_ShowReadError>0</Debug_ShowReadError>
+  <LowSensorInstall>1</LowSensorInstall>
+  
+  <BlockImgPath>/home/ubuntu/catkin_ws/src/sowan/map/test1023.bmp</BlockImgPath>
+  
+  <PatrolCycleWatiTime>5</PatrolCycleWatiTime>
+  <PatrolCycleCount>0</PatrolCycleCount>
+
+  <PatrolVoiceSwitch>1</PatrolVoiceSwitch>
+  <PatrolVoiceTime>22</PatrolVoiceTime>
+  <PatrolVoicePath>/home/ubuntu/catkin_ws/src/sowan/Voice/MaidenPrayer.wav</PatrolVoicePath>
+  <VehicleStopVoiceTime>3</VehicleStopVoiceTime>
+  <VehicleStopVoicePath>/home/ubuntu/catkin_ws/src/sowan/Voice/tento.wav</VehicleStopVoicePath>
+
+  <AutoMotorOn>0</AutoMotorOn>
+  
+
+
+
+
+</SOWAN>
